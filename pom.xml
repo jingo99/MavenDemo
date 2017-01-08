@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nisi</groupId>
-	<artifactId>DemoBackendApp</artifactId>
+	<artifactId>demobackendapp</artifactId>
 	<packaging>jar</packaging>
 	<version>0.1.0</version>
 
@@ -80,7 +80,9 @@
             <artifactId>docker-maven-plugin</artifactId>
             <version>0.4.13</version>
             <configuration>
-                <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+			<serverid>docker-hub</serverid>
+         <registryurl>https://index.docker.io/v1/</registryurl>
+                <imageName>ewanklomp/${project.artifactId}</imageName>
                 <dockerDirectory>src/main/docker</dockerDirectory>
                 <resources>
                     <resource>
