@@ -80,9 +80,7 @@
             <artifactId>docker-maven-plugin</artifactId>
             <version>0.4.13</version>
             <configuration>
-			<serverid>docker-hub</serverid>
-         <registryurl>https://index.docker.io/v1/</registryurl>
-                <imageName>ewanklomp/${project.artifactId}</imageName>
+                <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                 <dockerDirectory>src/main/docker</dockerDirectory>
                 <resources>
                     <resource>
