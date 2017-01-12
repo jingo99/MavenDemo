@@ -10,16 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorld {
 	
-	@RequestMapping("/")
-    public String home() {
-        return "Hello Ewan, You are the best";
-    }
-	
+		
 	public static void main(String[] args) {
-		LocalTime currentTime = new LocalTime();
-		System.out.println("The current local time is: " + currentTime);
-		Greeter greeter = new Greeter();
-		System.out.println(greeter.sayHello());
 		SpringApplication.run(HelloWorld.class, args);
 	}
 	
