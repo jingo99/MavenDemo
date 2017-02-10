@@ -1,5 +1,5 @@
 projectKey=org.nisi:demobackendapp
 serverUrl=http://localhost:9000
 dashboardUrl=http://localhost:9000/dashboard/index/org.nisi:demobackendapp
-ceTaskId=AVokzEuwG2XxmVBkC14o
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVokzEuwG2XxmVBkC14o
+ceTaskId=AVok4TbAG2XxmVBkC14p
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVok4TbAG2XxmVBkC14p
