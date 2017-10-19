@@ -72,11 +72,11 @@
 	
 	<distributionManagement>
     <repository>
-        <id>newhope-nexus</id>
+        <id>nexus</id>
         <url>http://35.195.58.39:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
-        <id>newhope-nexus</id>
+        <id>nexus</id>
         <url>http://35.195.58.39:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
