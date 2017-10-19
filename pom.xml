@@ -122,12 +122,7 @@
 					<!-- The server "id" element from settings to use authentication from -->
 					<serverId>nexus</serverId>
 				</configuration>
-	<plugin>
-	  
-		
-		
-		
-	</plugin>
+	
 		
 		
         </plugins>
