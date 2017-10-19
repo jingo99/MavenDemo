@@ -7,13 +7,33 @@
 	<packaging>jar</packaging>
 	<version>0.1.0</version>
 
+	
+	
 	<parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.4.3.RELEASE</version>
 	</parent>
 
+
+	<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Nexus Releases</name>
+      <url>
+http://35.195.58.39:8081/repository/maven-releases/
+</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Nexus Snapshot</name>
+      <url>http://35.195.58.39:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 	
+	
+	
+
 	
 	<dependencies>
 		<!-- tag::joda[] -->
@@ -117,13 +137,6 @@
         </plugins>
     </build>
 	
-   <repositories>
-	   <repository>
-        <id>acme-nexus-releases</id>
-        <name>acme nexus</name>
-        <url>http://35.195.58.39::8081/nexus/repository/maven-group</url>
-    </repository>
-	</repositories>
 	
 
 </project>
