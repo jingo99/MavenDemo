@@ -16,32 +16,14 @@
 	</parent>
 
 
-	<repositories>
-    <repository>
-      <id>nexus</id>
-      <url>https://35.195.58.39:8081/nexus/content/groups/public/</url>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>nexus</id>
-      <url>https://35.195.58.39/nexus/content/groups/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
+	
 	
 	
 	
 
 	
 	<dependencies>
-		<!-- test nexus-->
-<dependency>
-      <groupId>com.foobar.templates</groupId>
-      <artifactId>maventemplate-ear</artifactId>
-      <version>${distversion}</version>
-      <type>ear</type>
-    </dependency>
+		
 		
 		
 		
@@ -145,32 +127,7 @@
 		
 		<!-- test van nexus-->
 
-	<plugin>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <version>1.7</version>
-        <executions>
-          <execution>
-            <phase>compile</phase>
-            <configuration>
-              <target>
-                <!-- dump all available properties -->
-                <echoproperties />
-                <exec dir="." executable="cmd" osfamily="windows">
-                  <arg value="/c"/>
-                  <arg value="deploy.cmd ${maven.dependency.com.foobar.templates.maventemplate-ear.ear.path} ${environment} ${distversion}"/>
-                </exec>
-                <exec dir="." executable="/bin/bash" osfamily="unix">
-                  <arg value="-c"/>
-                  <arg value="./deploy.sh ${maven.dependency.com.foobar.templates.maventemplate-ear.ear.path} ${environment} ${distversion}"/>
-                </exec>
-              </target>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+	
 		
 		
         </plugins>
