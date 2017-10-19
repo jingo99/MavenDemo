@@ -112,6 +112,7 @@
                 </resources>
             </configuration>
         </plugin>
+		<plugin>
 		<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
 				<version>1.1</version>
@@ -122,7 +123,7 @@
 					<!-- The server "id" element from settings to use authentication from -->
 					<serverId>nexus</serverId>
 				</configuration>
-	
+		</plugin>
 		
 		
         </plugins>
