@@ -10,19 +10,15 @@ import org.junit.Before;
 import org.junit.After;
 
 public class SeleniumTest  extends TestCase{
-    
-    	private WebDriver driver;
+
+	private WebDriver driver;
 
 	@Before
 	public void setUp() throws Exception {
-		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-		capabilities.setCapability("version", "latest");
-		capabilities.setCapability("platform", "LINUX");
-		capabilities.setCapability("name", "Testing Selenium");
-
-		this.driver = new RemoteWebDriver(
-		   new URL("http://key:secret@hub.testingbot.com/wd/hub"),
-		   capabilities);
+		driver = new RemoteWebDriver(
+		new URL("http://key:secret@hub.testingbot.com/wd/hub"),
+			DesiredCapabilities.firefox()
+			);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
@@ -36,5 +32,5 @@ public class SeleniumTest  extends TestCase{
 	public void tearDown() throws Exception {
 		this.driver.quit();
 	}
-    
+
 }
