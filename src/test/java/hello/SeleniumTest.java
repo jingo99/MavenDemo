@@ -4,9 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.*;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -18,7 +16,7 @@ public class SeleniumTest  extends TestCase{
 	@Before
 	public void setUp() throws Exception {
 		DesiredCapabilities capability = DesiredCapabilities.Firefox(); 
-		IWebDriver driver = new RemoteWebDriver("35.195.58.39:4444", capability); 
+		driver = new RemoteWebDriver("http://35.195.58.39:4444", capability); 
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
