@@ -18,7 +18,7 @@ public class SeleniumTest  extends TestCase{
 	@Before
 	public void setUp() throws Exception {
 		DesiredCapabilities capability = DesiredCapabilities.Firefox(); 
-		IWebDriver driver = new RemoteWebDriver(http://35.195.58.39:4444, capability); 
+		IWebDriver driver = new RemoteWebDriver("35.195.58.39:4444", capability); 
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
