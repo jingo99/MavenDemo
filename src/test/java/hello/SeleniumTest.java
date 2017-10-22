@@ -15,11 +15,12 @@ public class SeleniumTest  extends TestCase{
 
 	@Before
 	public void setUp() throws Exception {
-		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability("platform", "LINUX");
-		caps.setCapability("version", "56");
-		caps.setCapability("browserName", "firefox");
-		driver = new RemoteWebDriver("http://35.195.58.39:4444", caps); 
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("version", "latest");
+		capabilities.setCapability("platform", Platform.WINDOWS);
+		capabilities.setCapability("name", "Testing Selenium");
+
+		driver = new RemoteWebDriver("http://35.195.58.39:4444", capabilities); 
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
