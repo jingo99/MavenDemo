@@ -20,7 +20,7 @@ public class SeleniumTest  extends TestCase{
 		capabilities.setCapability("platform", Platform.WINDOWS);
 		capabilities.setCapability("name", "Testing Selenium");
 
-		driver = new RemoteWebDriver("http://35.195.58.39:4444", capabilities); 
+		driver = new RemoteWebDriver(new URL("http://35.195.58.39:4444"), capabilities); 
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
