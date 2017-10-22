@@ -1,20 +1,15 @@
-
-
+package hello;
 import junit.framework.TestCase;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.*;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.junit.Test;
 
 public class SeleniumTest  extends TestCase{
     
-    private WebDriver driver;
+    	private WebDriver driver;
 
 	@Before
 	public void setUp() throws Exception {
