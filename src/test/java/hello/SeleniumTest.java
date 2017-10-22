@@ -4,7 +4,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.*;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -15,10 +17,7 @@ public class SeleniumTest  extends TestCase{
 
 	@Before
 	public void setUp() throws Exception {
-		driver = new RemoteWebDriver(
-		new URL("http://key:secret@hub.testingbot.com/wd/hub"),
-			DesiredCapabilities.firefox()
-			);
+		WebDriver driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
