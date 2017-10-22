@@ -19,7 +19,7 @@ public class SeleniumTest  extends TestCase{
 		caps.setCapability("platform", "LINUX");
 		caps.setCapability("version", "56");
 		caps.setCapability("browserName", "firefox");
-		driver = new RemoteWebDriver("http://35.195.58.39:4444", capability); 
+		driver = new RemoteWebDriver("http://35.195.58.39:4444", caps); 
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
