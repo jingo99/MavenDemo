@@ -17,7 +17,7 @@ public class SeleniumTest  extends TestCase{
 	public void setUp() throws Exception {
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		capabilities.setPlatform(Platform.LINUX);
-		driver = new RemoteWebDriver(new URL("http://35.195.58.39:4444/wd/hub"), capabilities); 
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities); 
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
