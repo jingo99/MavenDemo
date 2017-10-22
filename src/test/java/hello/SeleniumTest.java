@@ -6,6 +6,8 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
+import org.junit.Before;
+import org.junit.After;
 
 public class SeleniumTest  extends TestCase{
     
