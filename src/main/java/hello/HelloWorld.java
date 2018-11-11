@@ -13,7 +13,7 @@ public class HelloWorld {
 		
 	public static void main(String[] args) {
 		SpringApplication.run(HelloWorld.class, args);
-		int test = 4;
+		int test = 2;
 		Telop(test);
 		int test2 = 5;
 		vermenigvuldig(test,test2);
